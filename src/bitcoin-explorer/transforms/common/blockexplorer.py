@@ -23,7 +23,7 @@ def bitcoin_address(address):
     address information and all transactions associated with the
     wallet address."""
 
-    url = "https://blockexplorer.com/address/%s" % address
+    url = "https://explorer.zenon.community/address/?address=s" % address
     try:
         r = (requests.get(url))
     except Exception as e:
